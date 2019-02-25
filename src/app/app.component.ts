@@ -35,6 +35,6 @@ export class AppComponent implements OnInit {
           console.log('😺 Done!', event.body);
           this.users = event.body;
       }
-    })
+    });
   }
 }
