@@ -81,5 +81,12 @@ describe('CounterComponent', () => {
     expect(component.getNames()).toEqual([]);
   })
 
+  it('should sort ascending', function() {
+    component.sortArray();
+    fixture.detectChanges();
+    let users = component.userList;
+    expect(users).toEqual([33, 77, 88])
+  })
+
 });
 

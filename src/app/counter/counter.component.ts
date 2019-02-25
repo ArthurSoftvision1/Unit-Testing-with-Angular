@@ -13,8 +13,19 @@ export class CounterComponent  {
 
   public name: any;
 
+  public userList: any;
+
   constructor() { 
     this.counter = 1;
+  }
+
+  ngOnInit() {
+   this.sortArray();
+  }
+
+  sortArray() {
+    this.userList = [77, 88, 33];
+    this.userList.sort();
   }
 
   increment() {
