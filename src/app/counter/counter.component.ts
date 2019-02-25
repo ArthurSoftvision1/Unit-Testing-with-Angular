@@ -11,6 +11,8 @@ export class CounterComponent  {
 
   counter: number;
 
+  public name: any;
+
   constructor() { 
     this.counter = 1;
   }
@@ -21,6 +23,10 @@ export class CounterComponent  {
 
   decrement() {
     this.counter--;
+  }
+
+  public getNames() {
+    return this.name = [];
   }
 
 

@@ -34,7 +34,7 @@ describe('CounterComponent', () => {
     expect(component.title).toEqual('Counter Testing');
   }))
 
-  it('should incement the counter number by one', () => {
+  it('should increment the counter number by one', () => {
     // Arrange
     const initialValue = component.counter;
 
@@ -72,10 +72,14 @@ describe('CounterComponent', () => {
     expect(htmlElement.textContent).toEqual('Number: 0');
   })
 
-
   it('should display the current number of the counter', () => {
     // assert that the text on screen is of Number: 1
     expect(htmlElement.textContent).toEqual('Number: 1');
   })
+ 
+  it('expect getNames function to return an empty Array', () => {
+    expect(component.getNames()).toEqual([]);
+  })
+
 });
 
