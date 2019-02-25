@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CounterComponent  {
 
+  title = "Counter Testing";
+
   counter: number;
 
   constructor() { 
