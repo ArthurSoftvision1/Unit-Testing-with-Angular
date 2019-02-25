@@ -18,12 +18,15 @@ describe('CounterComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(CounterComponent);
     component = fixture.componentInstance;
-
     fixture.detectChanges();
 
     debugElement = fixture.debugElement.query(By.css('p'));
     htmlElement = debugElement.nativeElement;
   });
+
+  it ('should create counter component', () => {
+    expect(component).toBeTruthy();
+  })
 
   it(`should have as title 'Counter Testing'`, async(() => {
     fixture = TestBed.createComponent(CounterComponent);
@@ -31,7 +34,7 @@ describe('CounterComponent', () => {
     expect(component.title).toEqual('Counter Testing');
   }))
 
-  it('should increment the counter number by one', () => {
+  it('should incement the counter number by one', () => {
     // Arrange
     const initialValue = component.counter;
 
